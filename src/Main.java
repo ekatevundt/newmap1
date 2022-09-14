@@ -28,7 +28,7 @@ public class Main {
         }
         System.out.println(newMap);
         int maxNum = 0;
-        int minNum = 2;
+        int minNum = 100;
         for (int j : newMap.values()) {
             if (j > maxNum)
                 maxNum = j;
