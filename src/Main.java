@@ -26,17 +26,19 @@ public class Main {
 
             }
         }
-        int maxNum = 0;
-        int minNum = 100;
-        for (int j : newMap.values()) {
-            if (j > maxNum)
-                maxNum = j;
+        int maxValue = Integer.MIN_VALUE;
+        for (int value : newMap.values()) {
+            if (value > maxValue) {
+                maxValue = value;
+            }
         }
-        for (int t : newMap.values()) {
-            if (t < minNum)
-                minNum = t;
+        int minValue = Integer.MAX_VALUE;
+        for (int value : newMap.values()) {
+            if (value < minValue) {
+                minValue = value;
+            }
         }
-        System.out.println("Maximum value is: " + maxNum + " Minimum value is: " + minNum);
+   System.out.println("Maximum value is: " + maxValue + " Minimum value is: " + minValue);
 
     }
 
